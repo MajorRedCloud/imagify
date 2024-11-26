@@ -1,8 +1,20 @@
+import { SignedIn, SignedOut, SignInButton, UserButton } from '@clerk/nextjs'
 import React from 'react'
 
 const HomePage = () => {
   return (
-    <div>HomePage</div>
+    <div>
+      <p>
+      HomePage1
+      </p>
+      
+      <SignedOut>
+              <SignInButton />
+        </SignedOut>
+            <SignedIn>
+              <UserButton />
+            </SignedIn>
+    </div>
   )
 }
 
