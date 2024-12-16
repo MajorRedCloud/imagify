@@ -20,6 +20,7 @@ import { CustomField } from './CustomField'
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '../ui/select'
 import { AspectRatioKey, debounce, deepMergeObjects } from '@/lib/utils'
 import { updateCredits } from '@/lib/actions/user.actions'
+import MediaUploader from './MediaUploader'
 
 export const formSchema = z.object({
   title: z.string(),
@@ -190,7 +191,7 @@ const TransformationForm = ({action, data = null, userId, type, creditBalance, c
           </div>
         )}
 
-        {/* <div className="media-uploader-field">
+        <div className="media-uploader-field">
           <CustomField 
             control={form.control}
             name="publicId"
@@ -206,15 +207,15 @@ const TransformationForm = ({action, data = null, userId, type, creditBalance, c
             )}
           />
 
-          <TransformedImage 
+          {/* <TransformedImage 
             image={image}
             type={type}
             title={form.getValues().title}
             isTransforming={isTransforming}
             setIsTransforming={setIsTransforming}
             transformationConfig={transformationConfig}
-          />
-        </div> */}
+          /> */}
+        </div>
 
         <div className="flex flex-col gap-4">
           <Button 
