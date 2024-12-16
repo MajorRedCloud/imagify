@@ -190,4 +190,5 @@ export const navLinks = [
     publicId: "",
   };
   
-  export const creditFee = -1;
+  // todo credit fee set to 0 for development
+  export const creditFee = 0;
